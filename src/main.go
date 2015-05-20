@@ -21,16 +21,16 @@ func payload(w http.ResponseWriter, r *http.Request) {
 	// fmt.Fprintf(w, pay, r.URL.Path[1:])
 	fmt.Println(pay)
 	// fmt.Println(w, pay, r.URL.Path[1:])
-	fmt.Println("SomethingLikeThis")
+	fmt.Println("Payload section")
 }
 
 func List(w http.ResponseWriter, r *http.Request) {
-	var pay map[string]interface{}
+	var payld map[string]interface{}
 
 	// json.Unmarshal(r, &pay)
-	json.NewDecoder(r.Body).Decode(&pay)
+	json.NewDecoder(r.Body).Decode(&payld)
 	// fmt.Fprintf(w, pay, r.URL.Path[1:])
-	fmt.Println(pay)
+	fmt.Println(payld)
 	// fmt.Println(w, pay, r.URL.Path[1:])
-	fmt.Println("SomethingLikeThis")
+	fmt.Println("List section")
 }
