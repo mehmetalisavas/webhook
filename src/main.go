@@ -10,7 +10,7 @@ func main() {
 	http.HandleFunc("/", payload)
 	http.ListenAndServe(":4567", nil)
 }
-
+// payload is created for github webhook
 func payload(w http.ResponseWriter, r *http.Request) {
 	// fmt.Fprintf(w, "Hi, My name is Mehmet Ali ", r.URL.Path[1:])
 	var pay map[string]interface{}
