@@ -17,6 +17,7 @@ func payload(w http.ResponseWriter, r *http.Request) {
 	var pay map[string]interface{}
 	// json.Unmarshal(r, &pay)
 	json.NewDecoder(r.Body).Decode(&pay)
+	
 	// fmt.Fprintf(w, pay, r.URL.Path[1:])
 	fmt.Println(pay)
 	// fmt.Println(w, pay, r.URL.Path[1:])
