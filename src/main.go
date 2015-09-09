@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 )
 
+// This is the main function
 func main() {
 	http.HandleFunc("/", payload)
 	http.HandleFunc("/repos/mehmetalisavas/webhook/hooks", List)
