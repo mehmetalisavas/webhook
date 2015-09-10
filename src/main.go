@@ -25,7 +25,7 @@ func payload(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Payload section")
 }
 
-
+// list lists the incoming messages
 func List(w http.ResponseWriter, r *http.Request) {
 	var payld map[string]interface{}
 	// json.Unmarshal(r, &pay)
