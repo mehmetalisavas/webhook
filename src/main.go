@@ -30,6 +30,7 @@ func payload(w http.ResponseWriter, r *http.Request) {
 }
 
 
+// List list the list which list in the list
 func List(w http.ResponseWriter, r *http.Request) {
 	var payld map[string]interface{}
 	// json.Unmarshal(r, &pay)
