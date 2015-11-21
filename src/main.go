@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 )
 
-
 //edit
 // This is the main function
 func main() {
