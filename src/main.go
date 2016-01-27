@@ -36,4 +36,3 @@ func List(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(w, pay, r.URL.Path[1:])
 	fmt.Println("List section")
 }
-
